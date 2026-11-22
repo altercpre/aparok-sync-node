@@ -5,8 +5,8 @@ import (
 	"time"
 
 	"github.com/akrylysov/pogreb"
-	"github.com/anyproto/any-sync/app/logger"
-	"github.com/anyproto/any-sync/commonspace/spacestorage"
+	"github.com/altercpre/aparok-sync/app/logger"
+	"github.com/altercpre/aparok-sync/commonspace/spacestorage"
 )
 
 var (

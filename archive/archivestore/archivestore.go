@@ -1,4 +1,4 @@
-//go:generate mockgen -destination mock_archivestore/mock_archivestore.go github.com/anyproto/any-sync-node/archive/archivestore ArchiveStore
+//go:generate mockgen -destination mock_archivestore/mock_archivestore.go github.com/altercpre/aparok-sync-node/archive/archivestore ArchiveStore
 package archivestore
 
 import (
@@ -11,8 +11,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/anyproto/any-sync/app"
-	"github.com/anyproto/any-sync/app/logger"
+	"github.com/altercpre/aparok-sync/app"
+	"github.com/altercpre/aparok-sync/app/logger"
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/aws/awserr"
 	"github.com/aws/aws-sdk-go/aws/credentials"

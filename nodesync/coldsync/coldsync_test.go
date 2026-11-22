@@ -6,21 +6,21 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/anyproto/any-sync/app"
-	"github.com/anyproto/any-sync/commonspace/headsync/headstorage"
-	"github.com/anyproto/any-sync/commonspace/spacesyncproto"
-	"github.com/anyproto/any-sync/net/peer"
-	"github.com/anyproto/any-sync/net/rpc/rpcerr"
-	"github.com/anyproto/any-sync/net/rpc/rpctest"
-	"github.com/anyproto/any-sync/testutil/anymock"
+	"github.com/altercpre/aparok-sync/app"
+	"github.com/altercpre/aparok-sync/commonspace/headsync/headstorage"
+	"github.com/altercpre/aparok-sync/commonspace/spacesyncproto"
+	"github.com/altercpre/aparok-sync/net/peer"
+	"github.com/altercpre/aparok-sync/net/rpc/rpcerr"
+	"github.com/altercpre/aparok-sync/net/rpc/rpctest"
+	"github.com/altercpre/aparok-sync/testutil/anymock"
 	"github.com/stretchr/testify/require"
 	"go.uber.org/mock/gomock"
 
-	"github.com/anyproto/any-sync-node/archive/mock_archive"
-	"github.com/anyproto/any-sync-node/nodespace"
-	"github.com/anyproto/any-sync-node/nodespace/mock_nodespace"
-	"github.com/anyproto/any-sync-node/nodestorage"
-	"github.com/anyproto/any-sync-node/nodesync/nodesyncproto"
+	"github.com/altercpre/aparok-sync-node/archive/mock_archive"
+	"github.com/altercpre/aparok-sync-node/nodespace"
+	"github.com/altercpre/aparok-sync-node/nodespace/mock_nodespace"
+	"github.com/altercpre/aparok-sync-node/nodestorage"
+	"github.com/altercpre/aparok-sync-node/nodesync/nodesyncproto"
 )
 
 var ctx = context.Background()

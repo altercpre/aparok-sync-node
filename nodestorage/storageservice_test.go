@@ -16,20 +16,20 @@ import (
 	"testing"
 	"time"
 
-	anystore "github.com/anyproto/any-store"
-	"github.com/anyproto/any-sync/app"
-	"github.com/anyproto/any-sync/commonspace/headsync/statestorage"
-	"github.com/anyproto/any-sync/commonspace/spacestorage"
-	"github.com/anyproto/any-sync/testutil/anymock"
-	"github.com/anyproto/go-sqlite"
-	"github.com/anyproto/go-sqlite/sqlitex"
+	anystore "github.com/altercpre/aparok-store"
+	"github.com/altercpre/aparok-sync/app"
+	"github.com/altercpre/aparok-sync/commonspace/headsync/statestorage"
+	"github.com/altercpre/aparok-sync/commonspace/spacestorage"
+	"github.com/altercpre/aparok-sync/testutil/anymock"
+	"github.com/altercpre/go-sqlite"
+	"github.com/altercpre/go-sqlite/sqlitex"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 	"go.uber.org/mock/gomock"
 	"golang.org/x/exp/rand"
 	"golang.org/x/exp/slices"
 
-	"github.com/anyproto/any-sync-node/archive/mock_archive"
+	"github.com/altercpre/aparok-sync-node/archive/mock_archive"
 )
 
 func TestStorageService_SpaceStorage(t *testing.T) {

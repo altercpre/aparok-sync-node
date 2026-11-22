@@ -1,6 +1,6 @@
 .PHONY: proto build test deps
 SHELL=/usr/bin/env bash
-export GOPRIVATE=github.com/anyproto
+export GOPRIVATE=github.com/altercpre
 export PATH:=$(CURDIR)/deps:$(PATH)
 export CGO_ENABLED:=1
 BUILD_GOOS:=$(shell go env GOOS)
@@ -13,8 +13,8 @@ else
 endif
 
 build:
-	@$(eval FLAGS := $$(shell PATH=$(PATH) govvv -flags -pkg github.com/anyproto/any-sync/app))
-	GOOS=$(BUILD_GOOS) GOARCH=$(BUILD_GOARCH) go build -v $(TAGS) -o bin/any-sync-node -ldflags "$(FLAGS) -X github.com/anyproto/any-sync/app.AppName=any-sync-node" github.com/anyproto/any-sync-node/cmd
+	@$(eval FLAGS := $$(shell PATH=$(PATH) govvv -flags -pkg github.com/altercpre/aparok-sync/app))
+	GOOS=$(BUILD_GOOS) GOARCH=$(BUILD_GOARCH) go build -v $(TAGS) -o bin/any-sync-node -ldflags "$(FLAGS) -X github.com/altercpre/aparok-sync/app.AppName=any-sync-node" github.com/altercpre/aparok-sync-node/cmd
 
 test:
 	go test ./... --cover $(TAGS)

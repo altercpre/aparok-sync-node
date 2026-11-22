@@ -1,14 +1,14 @@
-module github.com/anyproto/any-sync-node
+module github.com/altercpre/aparok-sync-node
 
 go 1.26.0
 
 require (
 	github.com/ahmetb/govvv v0.3.0
 	github.com/akrylysov/pogreb v0.10.3-0.20240803013244-523613e335e9
-	github.com/anyproto/any-store v1.0.2
-	github.com/anyproto/any-sync v0.13.6
-	github.com/anyproto/go-chash v0.1.0
-	github.com/anyproto/go-sqlite v1.4.2-any
+	github.com/altercpre/aparok-store v1.0.2
+	github.com/altercpre/aparok-sync v0.13.6
+	github.com/altercpre/go-chash v0.1.0
+	github.com/altercpre/go-sqlite v1.4.2-any
 	github.com/aws/aws-sdk-go v1.55.8
 	github.com/cheggaaa/mb/v3 v3.0.3
 	github.com/planetscale/vtprotobuf v0.6.0
@@ -27,10 +27,10 @@ require (
 
 require (
 	filippo.io/edwards25519 v1.2.0 // indirect
-	github.com/anyproto/go-bip39 v1.0.0 // indirect
-	github.com/anyproto/go-slip10 v1.0.1 // indirect
-	github.com/anyproto/go-slip21 v1.0.0 // indirect
-	github.com/anyproto/lexid v0.0.6 // indirect
+	github.com/altercpre/go-bip39 v1.0.0 // indirect
+	github.com/altercpre/go-slip10 v1.0.1 // indirect
+	github.com/altercpre/go-slip21 v1.0.0 // indirect
+	github.com/altercpre/lexid v0.0.6 // indirect
 	github.com/beorn7/perks v1.0.1 // indirect
 	github.com/cespare/xxhash v1.1.0 // indirect
 	github.com/cespare/xxhash/v2 v2.3.0 // indirect

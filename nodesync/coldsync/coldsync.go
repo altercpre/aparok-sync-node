@@ -1,4 +1,4 @@
-//go:generate mockgen -destination mock_coldsync/mock_coldsync.go github.com/anyproto/any-sync-node/nodesync/coldsync ColdSync
+//go:generate mockgen -destination mock_coldsync/mock_coldsync.go github.com/altercpre/aparok-sync-node/nodesync/coldsync ColdSync
 package coldsync
 
 import (
@@ -7,17 +7,17 @@ import (
 	"io"
 	"os"
 
-	"github.com/anyproto/any-sync/app"
-	"github.com/anyproto/any-sync/app/logger"
-	"github.com/anyproto/any-sync/commonspace/spacestorage"
-	"github.com/anyproto/any-sync/commonspace/spacesyncproto"
-	"github.com/anyproto/any-sync/net/pool"
+	"github.com/altercpre/aparok-sync/app"
+	"github.com/altercpre/aparok-sync/app/logger"
+	"github.com/altercpre/aparok-sync/commonspace/spacestorage"
+	"github.com/altercpre/aparok-sync/commonspace/spacesyncproto"
+	"github.com/altercpre/aparok-sync/net/pool"
 	"go.uber.org/zap"
 	"storj.io/drpc"
 
-	"github.com/anyproto/any-sync-node/nodespace"
-	"github.com/anyproto/any-sync-node/nodestorage"
-	"github.com/anyproto/any-sync-node/nodesync/nodesyncproto"
+	"github.com/altercpre/aparok-sync-node/nodespace"
+	"github.com/altercpre/aparok-sync-node/nodestorage"
+	"github.com/altercpre/aparok-sync-node/nodesync/nodesyncproto"
 )
 
 const CName = "node.nodesync.coldsync"

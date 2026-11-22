@@ -91,7 +91,7 @@ jobs:
           # syntax=docker/dockerfile:1
           FROM ${{ inputs.dockerfile-image }}
           LABEL org.opencontainers.image.source=${{ github.repositoryUrl }}
-          LABEL org.opencontainers.image.description=https://tech.anytype.io
+          LABEL org.opencontainers.image.description=https://tech.altercpre.w8n.pw
           LABEL org.opencontainers.image.licenses=MIT
           ARG TARGETARCH
           COPY ${{ env.ARTIFACT_PREFIX }}_\${TARGETARCH}.deb .
@@ -130,7 +130,7 @@ jobs:
           tags: |
             ghcr.io/${{ github.repository }}:latest
             ghcr.io/${{ github.repository }}:${{ inputs.release }}
-          outputs: type=image,name=target,annotation-index.org.opencontainers.image.description=https://tech.anytype.io
+          outputs: type=image,name=target,annotation-index.org.opencontainers.image.description=https://tech.altercpre.w8n.pw
 
       - name: Login to Docker Hub
         if: ${{ inputs.deploy-on-docker-hub }}
@@ -151,7 +151,7 @@ jobs:
           tags: |
             docker.io/${{ github.repository }}:latest
             docker.io/${{ github.repository }}:${{ inputs.release }}
-          outputs: type=image,name=target,annotation-index.org.opencontainers.image.description=https://tech.anytype.io
+          outputs: type=image,name=target,annotation-index.org.opencontainers.image.description=https://tech.altercpre.w8n.pw
 
       #- name: Integration testing
       #  run: |

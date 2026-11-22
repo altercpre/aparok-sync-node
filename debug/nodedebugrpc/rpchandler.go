@@ -4,8 +4,8 @@ import (
 	"context"
 	"time"
 
-	"github.com/anyproto/any-sync-node/debug/nodedebugrpc/nodedebugrpcproto"
-	"github.com/anyproto/any-sync/commonspace/object/tree/objecttree"
+	"github.com/altercpre/aparok-sync-node/debug/nodedebugrpc/nodedebugrpcproto"
+	"github.com/altercpre/aparok-sync/commonspace/object/tree/objecttree"
 )
 
 type rpcHandler struct {

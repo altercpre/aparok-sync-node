@@ -3,11 +3,11 @@ package nodesync
 import (
 	"context"
 
-	"github.com/anyproto/any-sync/app/ldiff"
+	"github.com/altercpre/aparok-sync/app/ldiff"
 	"golang.org/x/exp/slices"
 
-	"github.com/anyproto/any-sync-node/nodehead"
-	"github.com/anyproto/any-sync-node/nodesync/nodesyncproto"
+	"github.com/altercpre/aparok-sync-node/nodehead"
+	"github.com/altercpre/aparok-sync-node/nodesync/nodesyncproto"
 )
 
 type nodeRemoteDiff struct {

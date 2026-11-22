@@ -7,9 +7,9 @@ import (
 	"testing"
 	"time"
 
-	anystore "github.com/anyproto/any-store"
-	"github.com/anyproto/any-store/anyenc"
-	"github.com/anyproto/any-store/query"
+	anystore "github.com/altercpre/aparok-store"
+	"github.com/altercpre/aparok-store/anyenc"
+	"github.com/altercpre/aparok-store/query"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

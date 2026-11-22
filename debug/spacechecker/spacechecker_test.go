@@ -3,10 +3,10 @@ package spacechecker
 import (
 	"testing"
 
-	"github.com/anyproto/any-sync/coordinator/coordinatorproto"
+	"github.com/altercpre/aparok-sync/coordinator/coordinatorproto"
 	"github.com/stretchr/testify/assert"
 
-	"github.com/anyproto/any-sync-node/nodestorage"
+	"github.com/altercpre/aparok-sync-node/nodestorage"
 )
 
 func TestLocalStatusString(t *testing.T) {

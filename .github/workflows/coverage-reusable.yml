@@ -34,7 +34,7 @@ jobs:
         go-version:
           - '1.26'
     env:
-      GOPRIVATE: github.com/anyproto
+      GOPRIVATE: github.com/altercpre
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-go@v4

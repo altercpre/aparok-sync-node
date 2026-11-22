@@ -7,11 +7,11 @@ import (
 	"testing"
 	"time"
 
-	"github.com/anyproto/any-sync/app/ocache"
+	"github.com/altercpre/aparok-sync/app/ocache"
 	"github.com/stretchr/testify/require"
 	"go.uber.org/mock/gomock"
 
-	"github.com/anyproto/any-sync-node/nodespace/mock_nodespace"
+	"github.com/altercpre/aparok-sync-node/nodespace/mock_nodespace"
 )
 
 type space struct {

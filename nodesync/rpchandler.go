@@ -3,9 +3,9 @@ package nodesync
 import (
 	"context"
 
-	"github.com/anyproto/any-sync-node/nodespace"
-	"github.com/anyproto/any-sync-node/nodesync/coldsync"
-	"github.com/anyproto/any-sync-node/nodesync/nodesyncproto"
+	"github.com/altercpre/aparok-sync-node/nodespace"
+	"github.com/altercpre/aparok-sync-node/nodesync/coldsync"
+	"github.com/altercpre/aparok-sync-node/nodesync/nodesyncproto"
 )
 
 var _ nodesyncproto.DRPCNodeSyncServer = (*rpcHandler)(nil)

@@ -4,15 +4,15 @@ import (
 	"context"
 	"time"
 
-	"github.com/anyproto/any-sync/app/logger"
-	"github.com/anyproto/any-sync/commonspace"
-	"github.com/anyproto/any-sync/consensus/consensusclient"
-	"github.com/anyproto/any-sync/consensus/consensusproto"
-	"github.com/anyproto/any-sync/consensus/consensusproto/consensuserr"
-	"github.com/anyproto/any-sync/net/rpc/rpcerr"
+	"github.com/altercpre/aparok-sync/app/logger"
+	"github.com/altercpre/aparok-sync/commonspace"
+	"github.com/altercpre/aparok-sync/consensus/consensusclient"
+	"github.com/altercpre/aparok-sync/consensus/consensusproto"
+	"github.com/altercpre/aparok-sync/consensus/consensusproto/consensuserr"
+	"github.com/altercpre/aparok-sync/net/rpc/rpcerr"
 	"go.uber.org/zap"
 
-	"github.com/anyproto/any-sync-node/nodestorage"
+	"github.com/altercpre/aparok-sync-node/nodestorage"
 )
 
 type NodeSpace interface {

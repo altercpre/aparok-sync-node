@@ -4,8 +4,8 @@ import (
 	"context"
 	"testing"
 
-	"github.com/anyproto/any-sync/commonspace/spacestorage/oldstorage"
-	"github.com/anyproto/any-sync/consensus/consensusproto"
+	"github.com/altercpre/aparok-sync/commonspace/spacestorage/oldstorage"
+	"github.com/altercpre/aparok-sync/consensus/consensusproto"
 	"github.com/stretchr/testify/require"
 )
 

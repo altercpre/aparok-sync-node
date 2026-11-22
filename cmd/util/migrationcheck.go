@@ -6,10 +6,10 @@ import (
 	"fmt"
 	"os"
 
-	anystore "github.com/anyproto/any-store"
-	"github.com/anyproto/any-store/query"
+	anystore "github.com/altercpre/aparok-store"
+	"github.com/altercpre/aparok-store/query"
 
-	"github.com/anyproto/any-sync-node/nodespace/migrator"
+	"github.com/altercpre/aparok-sync-node/nodespace/migrator"
 )
 
 var ctx = context.Background()

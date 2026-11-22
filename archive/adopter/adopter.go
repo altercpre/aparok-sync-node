@@ -1,23 +1,23 @@
-//go:generate mockgen -destination mock_adopter/mock_adopter.go github.com/anyproto/any-sync-node/archive/adopter Adopter
+//go:generate mockgen -destination mock_adopter/mock_adopter.go github.com/altercpre/aparok-sync-node/archive/adopter Adopter
 package adopter
 
 import (
 	"context"
 	"errors"
 
-	anystore "github.com/anyproto/any-store"
-	"github.com/anyproto/any-sync/app"
-	"github.com/anyproto/any-sync/app/logger"
-	"github.com/anyproto/any-sync/metric"
-	"github.com/anyproto/any-sync/net/peer"
-	"github.com/anyproto/any-sync/nodeconf"
+	anystore "github.com/altercpre/aparok-store"
+	"github.com/altercpre/aparok-sync/app"
+	"github.com/altercpre/aparok-sync/app/logger"
+	"github.com/altercpre/aparok-sync/metric"
+	"github.com/altercpre/aparok-sync/net/peer"
+	"github.com/altercpre/aparok-sync/nodeconf"
 	"go.uber.org/zap"
 
-	"github.com/anyproto/any-sync-node/archive"
-	"github.com/anyproto/any-sync-node/archive/archivestore"
-	"github.com/anyproto/any-sync-node/nodehead"
-	"github.com/anyproto/any-sync-node/nodestorage"
-	"github.com/anyproto/any-sync-node/nodesync/nodesyncproto"
+	"github.com/altercpre/aparok-sync-node/archive"
+	"github.com/altercpre/aparok-sync-node/archive/archivestore"
+	"github.com/altercpre/aparok-sync-node/nodehead"
+	"github.com/altercpre/aparok-sync-node/nodestorage"
+	"github.com/altercpre/aparok-sync-node/nodesync/nodesyncproto"
 )
 
 const CName = "node.archive.adopter"

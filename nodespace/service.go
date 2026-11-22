@@ -1,4 +1,4 @@
-//go:generate mockgen -destination mock_nodespace/mock_nodespace.go github.com/anyproto/any-sync-node/nodespace Service,NodeSpace
+//go:generate mockgen -destination mock_nodespace/mock_nodespace.go github.com/altercpre/aparok-sync-node/nodespace Service,NodeSpace
 package nodespace
 
 import (
@@ -8,25 +8,25 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/anyproto/any-sync/app"
-	"github.com/anyproto/any-sync/app/logger"
-	"github.com/anyproto/any-sync/app/ocache"
-	"github.com/anyproto/any-sync/commonspace"
-	"github.com/anyproto/any-sync/commonspace/config"
-	"github.com/anyproto/any-sync/commonspace/spacestorage"
-	"github.com/anyproto/any-sync/commonspace/spacesyncproto"
-	"github.com/anyproto/any-sync/commonspace/syncstatus"
-	"github.com/anyproto/any-sync/consensus/consensusclient"
-	"github.com/anyproto/any-sync/coordinator/coordinatorclient"
-	"github.com/anyproto/any-sync/metric"
-	"github.com/anyproto/any-sync/net/rpc/server"
-	"github.com/anyproto/any-sync/net/streampool"
-	"github.com/anyproto/any-sync/nodeconf"
+	"github.com/altercpre/aparok-sync/app"
+	"github.com/altercpre/aparok-sync/app/logger"
+	"github.com/altercpre/aparok-sync/app/ocache"
+	"github.com/altercpre/aparok-sync/commonspace"
+	"github.com/altercpre/aparok-sync/commonspace/config"
+	"github.com/altercpre/aparok-sync/commonspace/spacestorage"
+	"github.com/altercpre/aparok-sync/commonspace/spacesyncproto"
+	"github.com/altercpre/aparok-sync/commonspace/syncstatus"
+	"github.com/altercpre/aparok-sync/consensus/consensusclient"
+	"github.com/altercpre/aparok-sync/coordinator/coordinatorclient"
+	"github.com/altercpre/aparok-sync/metric"
+	"github.com/altercpre/aparok-sync/net/rpc/server"
+	"github.com/altercpre/aparok-sync/net/streampool"
+	"github.com/altercpre/aparok-sync/nodeconf"
 	"go.uber.org/zap"
 
-	"github.com/anyproto/any-sync-node/nodehead"
-	"github.com/anyproto/any-sync-node/nodespace/treesyncer"
-	"github.com/anyproto/any-sync-node/nodestorage"
+	"github.com/altercpre/aparok-sync-node/nodehead"
+	"github.com/altercpre/aparok-sync-node/nodespace/treesyncer"
+	"github.com/altercpre/aparok-sync-node/nodestorage"
 )
 
 const CName = "node.nodespace"

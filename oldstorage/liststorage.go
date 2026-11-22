@@ -5,8 +5,8 @@ import (
 	"errors"
 
 	"github.com/akrylysov/pogreb"
-	"github.com/anyproto/any-sync/commonspace/spacestorage/oldstorage"
-	"github.com/anyproto/any-sync/consensus/consensusproto"
+	"github.com/altercpre/aparok-sync/commonspace/spacestorage/oldstorage"
+	"github.com/altercpre/aparok-sync/consensus/consensusproto"
 )
 
 var (

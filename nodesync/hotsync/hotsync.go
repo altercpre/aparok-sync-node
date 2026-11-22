@@ -1,4 +1,4 @@
-//go:generate mockgen -destination mock_hotsync/mock_hotsync.go github.com/anyproto/any-sync-node/nodesync/hotsync HotSync
+//go:generate mockgen -destination mock_hotsync/mock_hotsync.go github.com/altercpre/aparok-sync-node/nodesync/hotsync HotSync
 package hotsync
 
 import (
@@ -6,14 +6,14 @@ import (
 	"sync"
 	"sync/atomic"
 
-	"github.com/anyproto/any-sync/app"
-	"github.com/anyproto/any-sync/app/logger"
-	"github.com/anyproto/any-sync/app/ocache"
-	"github.com/anyproto/any-sync/util/periodicsync"
-	"github.com/anyproto/any-sync/util/slice"
+	"github.com/altercpre/aparok-sync/app"
+	"github.com/altercpre/aparok-sync/app/logger"
+	"github.com/altercpre/aparok-sync/app/ocache"
+	"github.com/altercpre/aparok-sync/util/periodicsync"
+	"github.com/altercpre/aparok-sync/util/slice"
 	"go.uber.org/zap"
 
-	"github.com/anyproto/any-sync-node/nodespace"
+	"github.com/altercpre/aparok-sync-node/nodespace"
 )
 
 var log = logger.NewNamed(CName)

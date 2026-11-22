@@ -33,7 +33,7 @@ jobs:
           - arch: arm64
             rpm_arch: aarch64
     env:
-      GOPRIVATE: github.com/anyproto
+      GOPRIVATE: github.com/altercpre
     steps:
       - uses: actions/checkout@v5
       - uses: actions/setup-go@v6

@@ -3,7 +3,7 @@ package nodesyncproto
 import (
 	"errors"
 
-	"github.com/anyproto/any-sync/net/rpc/rpcerr"
+	"github.com/altercpre/aparok-sync/net/rpc/rpcerr"
 )
 
 var (

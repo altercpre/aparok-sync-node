@@ -5,11 +5,11 @@ import (
 	"errors"
 	"testing"
 
-	"github.com/anyproto/any-sync/commonspace/mock_commonspace"
-	"github.com/anyproto/any-sync/commonspace/object/acl/syncacl/mock_syncacl"
-	"github.com/anyproto/any-sync/consensus/consensusclient/mock_consensusclient"
-	"github.com/anyproto/any-sync/consensus/consensusproto"
-	"github.com/anyproto/any-sync/consensus/consensusproto/consensuserr"
+	"github.com/altercpre/aparok-sync/commonspace/mock_commonspace"
+	"github.com/altercpre/aparok-sync/commonspace/object/acl/syncacl/mock_syncacl"
+	"github.com/altercpre/aparok-sync/consensus/consensusclient/mock_consensusclient"
+	"github.com/altercpre/aparok-sync/consensus/consensusproto"
+	"github.com/altercpre/aparok-sync/consensus/consensusproto/consensuserr"
 	"github.com/stretchr/testify/require"
 	"go.uber.org/mock/gomock"
 )

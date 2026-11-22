@@ -5,17 +5,17 @@ import (
 	"errors"
 	"time"
 
-	"github.com/anyproto/any-sync/app"
-	"github.com/anyproto/any-sync/app/logger"
-	"github.com/anyproto/any-sync/app/ocache"
-	"github.com/anyproto/any-sync/commonspace/object/tree/objecttree"
-	"github.com/anyproto/any-sync/commonspace/object/tree/treestorage"
-	"github.com/anyproto/any-sync/commonspace/object/treemanager"
-	"github.com/anyproto/any-sync/commonspace/objecttreebuilder"
-	"github.com/anyproto/any-sync/metric"
+	"github.com/altercpre/aparok-sync/app"
+	"github.com/altercpre/aparok-sync/app/logger"
+	"github.com/altercpre/aparok-sync/app/ocache"
+	"github.com/altercpre/aparok-sync/commonspace/object/tree/objecttree"
+	"github.com/altercpre/aparok-sync/commonspace/object/tree/treestorage"
+	"github.com/altercpre/aparok-sync/commonspace/object/treemanager"
+	"github.com/altercpre/aparok-sync/commonspace/objecttreebuilder"
+	"github.com/altercpre/aparok-sync/metric"
 	"go.uber.org/zap"
 
-	"github.com/anyproto/any-sync-node/nodespace"
+	"github.com/altercpre/aparok-sync-node/nodespace"
 )
 
 var log = logger.NewNamed("treecache")

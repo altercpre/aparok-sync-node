@@ -5,10 +5,10 @@ import (
 	"context"
 	"fmt"
 
-	anystore "github.com/anyproto/any-store"
-	"github.com/anyproto/any-store/query"
-	"github.com/anyproto/any-sync/commonspace/headsync/headstorage"
-	"github.com/anyproto/any-sync/commonspace/object/tree/objecttree"
+	anystore "github.com/altercpre/aparok-store"
+	"github.com/altercpre/aparok-store/query"
+	"github.com/altercpre/aparok-sync/commonspace/headsync/headstorage"
+	"github.com/altercpre/aparok-sync/commonspace/object/tree/objecttree"
 	"golang.org/x/exp/slices"
 )
 

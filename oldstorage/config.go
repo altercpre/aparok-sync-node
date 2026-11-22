@@ -1,6 +1,6 @@
 package oldstorage
 
-import "github.com/anyproto/any-sync-node/nodestorage"
+import "github.com/altercpre/aparok-sync-node/nodestorage"
 
 type configGetter interface {
 	GetStorage() nodestorage.Config

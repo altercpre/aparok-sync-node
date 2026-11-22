@@ -5,10 +5,10 @@ import (
 	"errors"
 	"time"
 
-	anystore "github.com/anyproto/any-store"
+	anystore "github.com/altercpre/aparok-store"
 	"go.uber.org/zap"
 
-	"github.com/anyproto/any-sync-node/nodestorage"
+	"github.com/altercpre/aparok-sync-node/nodestorage"
 )
 
 const (

@@ -7,19 +7,19 @@ import (
 	"os"
 	"testing"
 
-	"github.com/anyproto/any-sync/app"
-	"github.com/anyproto/any-sync/app/ldiff"
-	"github.com/anyproto/any-sync/nodeconf"
-	"github.com/anyproto/any-sync/nodeconf/mock_nodeconf"
-	"github.com/anyproto/any-sync/testutil/anymock"
-	"github.com/anyproto/any-sync/testutil/testnodeconf"
-	"github.com/anyproto/go-chash"
+	"github.com/altercpre/aparok-sync/app"
+	"github.com/altercpre/aparok-sync/app/ldiff"
+	"github.com/altercpre/aparok-sync/nodeconf"
+	"github.com/altercpre/aparok-sync/nodeconf/mock_nodeconf"
+	"github.com/altercpre/aparok-sync/testutil/anymock"
+	"github.com/altercpre/aparok-sync/testutil/testnodeconf"
+	"github.com/altercpre/go-chash"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 	"go.uber.org/mock/gomock"
 
-	"github.com/anyproto/any-sync-node/archive/mock_archive"
-	"github.com/anyproto/any-sync-node/nodestorage"
+	"github.com/altercpre/aparok-sync-node/archive/mock_archive"
+	"github.com/altercpre/aparok-sync-node/nodestorage"
 )
 
 var ctx = context.Background()

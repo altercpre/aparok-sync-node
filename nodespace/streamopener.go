@@ -3,12 +3,12 @@ package nodespace
 import (
 	"errors"
 
-	"github.com/anyproto/any-sync/app"
-	"github.com/anyproto/any-sync/commonspace/spacesyncproto"
-	"github.com/anyproto/any-sync/commonspace/sync/objectsync/objectmessages"
-	"github.com/anyproto/any-sync/net/peer"
-	"github.com/anyproto/any-sync/net/streampool"
-	"github.com/anyproto/any-sync/net/streampool/streamhandler"
+	"github.com/altercpre/aparok-sync/app"
+	"github.com/altercpre/aparok-sync/commonspace/spacesyncproto"
+	"github.com/altercpre/aparok-sync/commonspace/sync/objectsync/objectmessages"
+	"github.com/altercpre/aparok-sync/net/peer"
+	"github.com/altercpre/aparok-sync/net/streampool"
+	"github.com/altercpre/aparok-sync/net/streampool/streamhandler"
 	"go.uber.org/zap"
 	"golang.org/x/net/context"
 	"storj.io/drpc"

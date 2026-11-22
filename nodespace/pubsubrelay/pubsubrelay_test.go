@@ -6,15 +6,15 @@ import (
 	"testing"
 	"time"
 
-	"github.com/anyproto/any-sync/net/pool/mock_pool"
-	"github.com/anyproto/any-sync/net/rpc/rpctest"
-	"github.com/anyproto/any-sync/nodeconf/mock_nodeconf"
+	"github.com/altercpre/aparok-sync/net/pool/mock_pool"
+	"github.com/altercpre/aparok-sync/net/rpc/rpctest"
+	"github.com/altercpre/aparok-sync/nodeconf/mock_nodeconf"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 	"go.uber.org/mock/gomock"
 
-	"github.com/anyproto/any-sync-node/nodespace"
-	"github.com/anyproto/any-sync-node/nodespace/mock_nodespace"
+	"github.com/altercpre/aparok-sync-node/nodespace"
+	"github.com/altercpre/aparok-sync-node/nodespace/mock_nodespace"
 )
 
 func newRelay(t *testing.T) (*relay, *mock_nodeconf.MockService, *mock_pool.MockService) {

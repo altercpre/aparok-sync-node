@@ -9,7 +9,7 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/anyproto/any-sync-node/nodesync/nodesyncproto"
+	"github.com/altercpre/aparok-sync-node/nodesync/nodesyncproto"
 )
 
 const chunkSize = 1024 * 1024 // 1 Mb

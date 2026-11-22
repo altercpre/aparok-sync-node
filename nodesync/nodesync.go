@@ -1,4 +1,4 @@
-//go:generate mockgen -destination mock_nodesync/mock_nodesync.go github.com/anyproto/any-sync-node/nodesync NodeSync
+//go:generate mockgen -destination mock_nodesync/mock_nodesync.go github.com/altercpre/aparok-sync-node/nodesync NodeSync
 package nodesync
 
 import (
@@ -7,22 +7,22 @@ import (
 	"sync"
 	"time"
 
-	commonaccount "github.com/anyproto/any-sync/accountservice"
-	"github.com/anyproto/any-sync/app"
-	"github.com/anyproto/any-sync/app/logger"
-	"github.com/anyproto/any-sync/metric"
-	"github.com/anyproto/any-sync/net/pool"
-	"github.com/anyproto/any-sync/net/rpc/server"
-	"github.com/anyproto/any-sync/nodeconf"
-	"github.com/anyproto/go-chash"
+	commonaccount "github.com/altercpre/aparok-sync/accountservice"
+	"github.com/altercpre/aparok-sync/app"
+	"github.com/altercpre/aparok-sync/app/logger"
+	"github.com/altercpre/aparok-sync/metric"
+	"github.com/altercpre/aparok-sync/net/pool"
+	"github.com/altercpre/aparok-sync/net/rpc/server"
+	"github.com/altercpre/aparok-sync/nodeconf"
+	"github.com/altercpre/go-chash"
 	"go.uber.org/zap"
 	"storj.io/drpc"
 
-	"github.com/anyproto/any-sync-node/nodehead"
-	"github.com/anyproto/any-sync-node/nodespace"
-	"github.com/anyproto/any-sync-node/nodesync/coldsync"
-	"github.com/anyproto/any-sync-node/nodesync/hotsync"
-	"github.com/anyproto/any-sync-node/nodesync/nodesyncproto"
+	"github.com/altercpre/aparok-sync-node/nodehead"
+	"github.com/altercpre/aparok-sync-node/nodespace"
+	"github.com/altercpre/aparok-sync-node/nodesync/coldsync"
+	"github.com/altercpre/aparok-sync-node/nodesync/hotsync"
+	"github.com/altercpre/aparok-sync-node/nodesync/nodesyncproto"
 )
 
 const CName = "node.nodesync"

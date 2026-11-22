@@ -3,14 +3,14 @@ package treesyncer
 import (
 	"context"
 
-	"github.com/anyproto/any-sync/net/peer"
+	"github.com/altercpre/aparok-sync/net/peer"
 	"go.uber.org/zap"
 
-	"github.com/anyproto/any-sync/app"
-	"github.com/anyproto/any-sync/app/logger"
-	"github.com/anyproto/any-sync/commonspace/object/tree/synctree"
-	"github.com/anyproto/any-sync/commonspace/object/treemanager"
-	"github.com/anyproto/any-sync/commonspace/object/treesyncer"
+	"github.com/altercpre/aparok-sync/app"
+	"github.com/altercpre/aparok-sync/app/logger"
+	"github.com/altercpre/aparok-sync/commonspace/object/tree/synctree"
+	"github.com/altercpre/aparok-sync/commonspace/object/treemanager"
+	"github.com/altercpre/aparok-sync/commonspace/object/treesyncer"
 )
 
 var log = logger.NewNamed(treesyncer.CName)

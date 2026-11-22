@@ -1,4 +1,4 @@
-//go:generate mockgen -destination mock_nodestorage/mock_nodestorage.go github.com/anyproto/any-sync-node/nodestorage NodeStorage
+//go:generate mockgen -destination mock_nodestorage/mock_nodestorage.go github.com/altercpre/aparok-sync-node/nodestorage NodeStorage
 package oldstorage
 
 import (
@@ -11,9 +11,9 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/anyproto/any-sync/app"
-	"github.com/anyproto/any-sync/commonspace/spacestorage"
-	"github.com/anyproto/any-sync/commonspace/spacestorage/oldstorage"
+	"github.com/altercpre/aparok-sync/app"
+	"github.com/altercpre/aparok-sync/commonspace/spacestorage"
+	"github.com/altercpre/aparok-sync/commonspace/spacestorage/oldstorage"
 	"go.uber.org/zap"
 )
 

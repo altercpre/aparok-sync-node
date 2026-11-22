@@ -1,4 +1,4 @@
-//go:generate mockgen -destination mock_archive/mock_archive.go github.com/anyproto/any-sync-node/archive Archive
+//go:generate mockgen -destination mock_archive/mock_archive.go github.com/altercpre/aparok-sync-node/archive Archive
 
 package archive
 
@@ -12,15 +12,15 @@ import (
 	"sync"
 	"time"
 
-	anystore "github.com/anyproto/any-store"
-	"github.com/anyproto/any-sync/app"
-	"github.com/anyproto/any-sync/app/logger"
-	"github.com/anyproto/any-sync/metric"
-	"github.com/anyproto/any-sync/util/periodicsync"
+	anystore "github.com/altercpre/aparok-store"
+	"github.com/altercpre/aparok-sync/app"
+	"github.com/altercpre/aparok-sync/app/logger"
+	"github.com/altercpre/aparok-sync/metric"
+	"github.com/altercpre/aparok-sync/util/periodicsync"
 	"go.uber.org/zap"
 
-	"github.com/anyproto/any-sync-node/archive/archivestore"
-	"github.com/anyproto/any-sync-node/nodestorage"
+	"github.com/altercpre/aparok-sync-node/archive/archivestore"
+	"github.com/altercpre/aparok-sync-node/nodestorage"
 )
 
 const CName = "node.archive"

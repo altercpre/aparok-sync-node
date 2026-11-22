@@ -1,4 +1,4 @@
-//go:generate mockgen -destination mock_nodestorage/mock_nodestorage.go github.com/anyproto/any-sync-node/nodestorage NodeStorage,IndexStorage
+//go:generate mockgen -destination mock_nodestorage/mock_nodestorage.go github.com/altercpre/aparok-sync-node/nodestorage NodeStorage,IndexStorage
 package nodestorage
 
 import (
@@ -12,16 +12,16 @@ import (
 	"sync"
 	"time"
 
-	anystore "github.com/anyproto/any-store"
-	"github.com/anyproto/any-sync/app"
-	"github.com/anyproto/any-sync/app/debugstat"
-	"github.com/anyproto/any-sync/app/ocache"
-	"github.com/anyproto/any-sync/commonspace/object/accountdata"
-	"github.com/anyproto/any-sync/commonspace/object/acl/list"
-	"github.com/anyproto/any-sync/commonspace/object/acl/recordverifier"
-	"github.com/anyproto/any-sync/commonspace/spacestorage"
-	"github.com/anyproto/any-sync/metric"
-	"github.com/anyproto/any-sync/util/slice"
+	anystore "github.com/altercpre/aparok-store"
+	"github.com/altercpre/aparok-sync/app"
+	"github.com/altercpre/aparok-sync/app/debugstat"
+	"github.com/altercpre/aparok-sync/app/ocache"
+	"github.com/altercpre/aparok-sync/commonspace/object/accountdata"
+	"github.com/altercpre/aparok-sync/commonspace/object/acl/list"
+	"github.com/altercpre/aparok-sync/commonspace/object/acl/recordverifier"
+	"github.com/altercpre/aparok-sync/commonspace/spacestorage"
+	"github.com/altercpre/aparok-sync/metric"
+	"github.com/altercpre/aparok-sync/util/slice"
 	"go.uber.org/zap"
 )
 

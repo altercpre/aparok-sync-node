@@ -5,20 +5,20 @@ import (
 	"errors"
 	"testing"
 
-	"github.com/anyproto/any-sync/commonspace/spacesyncproto"
+	"github.com/altercpre/aparok-sync/commonspace/spacesyncproto"
 
-	"github.com/anyproto/any-sync/app"
-	"github.com/anyproto/any-sync/nodeconf"
-	"github.com/anyproto/any-sync/nodeconf/mock_nodeconf"
-	"github.com/anyproto/any-sync/testutil/anymock"
+	"github.com/altercpre/aparok-sync/app"
+	"github.com/altercpre/aparok-sync/nodeconf"
+	"github.com/altercpre/aparok-sync/nodeconf/mock_nodeconf"
+	"github.com/altercpre/aparok-sync/testutil/anymock"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 	"go.uber.org/mock/gomock"
 
-	"github.com/anyproto/any-sync-node/nodestorage"
-	"github.com/anyproto/any-sync-node/nodestorage/mock_nodestorage"
-	"github.com/anyproto/any-sync-node/nodesync/coldsync"
-	"github.com/anyproto/any-sync-node/nodesync/coldsync/mock_coldsync"
+	"github.com/altercpre/aparok-sync-node/nodestorage"
+	"github.com/altercpre/aparok-sync-node/nodestorage/mock_nodestorage"
+	"github.com/altercpre/aparok-sync-node/nodesync/coldsync"
+	"github.com/altercpre/aparok-sync-node/nodesync/coldsync/mock_coldsync"
 )
 
 var ctx = context.Background()

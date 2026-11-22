@@ -8,20 +8,20 @@ import (
 	"testing"
 	"time"
 
-	anystore "github.com/anyproto/any-store"
-	"github.com/anyproto/any-store/anyenc"
-	"github.com/anyproto/any-sync/app"
-	"github.com/anyproto/any-sync/testutil/anymock"
+	anystore "github.com/altercpre/aparok-store"
+	"github.com/altercpre/aparok-store/anyenc"
+	"github.com/altercpre/aparok-sync/app"
+	"github.com/altercpre/aparok-sync/testutil/anymock"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 	"go.uber.org/mock/gomock"
 
-	"github.com/anyproto/any-sync-node/archive/archivestore"
-	"github.com/anyproto/any-sync-node/archive/archivestore/mock_archivestore"
-	"github.com/anyproto/any-sync-node/nodestorage"
-	"github.com/anyproto/any-sync-node/nodestorage/mock_nodestorage"
-	"github.com/anyproto/any-sync-node/nodesync"
-	"github.com/anyproto/any-sync-node/nodesync/mock_nodesync"
+	"github.com/altercpre/aparok-sync-node/archive/archivestore"
+	"github.com/altercpre/aparok-sync-node/archive/archivestore/mock_archivestore"
+	"github.com/altercpre/aparok-sync-node/nodestorage"
+	"github.com/altercpre/aparok-sync-node/nodestorage/mock_nodestorage"
+	"github.com/altercpre/aparok-sync-node/nodesync"
+	"github.com/altercpre/aparok-sync-node/nodesync/mock_nodesync"
 )
 
 var ctx = context.Background()

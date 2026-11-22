@@ -1,6 +1,6 @@
 package nodesync
 
-import "github.com/anyproto/any-sync-node/nodesync/hotsync"
+import "github.com/altercpre/aparok-sync-node/nodesync/hotsync"
 
 type configGetter interface {
 	GetNodeSync() Config

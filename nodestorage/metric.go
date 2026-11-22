@@ -1,7 +1,7 @@
 package nodestorage
 
 import (
-	"github.com/anyproto/any-sync/app/ocache"
+	"github.com/altercpre/aparok-sync/app/ocache"
 	"github.com/prometheus/client_golang/prometheus"
 )
 

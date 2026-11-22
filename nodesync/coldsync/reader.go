@@ -12,7 +12,7 @@ import (
 
 	"go.uber.org/multierr"
 
-	"github.com/anyproto/any-sync-node/nodesync/nodesyncproto"
+	"github.com/altercpre/aparok-sync-node/nodesync/nodesyncproto"
 )
 
 type streamReader struct {

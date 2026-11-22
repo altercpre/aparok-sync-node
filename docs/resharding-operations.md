@@ -12,7 +12,7 @@ Covered by tests: `resharder/scenarios_test.go` (`TestScenario_AddNode`,
 ## Prerequisites
 
 Resharding is gated on a **shared archive store**. Every tree node (including
-new ones) needs, in `any-sync-node.yml`:
+new ones) needs, in `aparok-sync-node.yml`:
 
 ```yaml
 s3Store:
