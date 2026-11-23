@@ -1,24 +1,24 @@
-﻿# Any-Sync Node
+﻿# Aparok Sync Node
 Implementation of node from [`aparok-sync`](https://github.com/altercpre/aparok-sync) protocol.
 
 ## Building the source
 To ensure compatibility, please use Go version `1.26`.
 
-To build and run the Any-Sync Node on your own server, follow these steps:
+To build and run the Aparok Sync Node on your own server, follow these steps:
 
 1.  Clone `aparok-sync-node` repository.
 2.  Navigate to the root directory of the repository.
-3.  Run the following commands to install the required dependencies and build the Any-Sync Node.
+3.  Run the following commands to install the required dependencies and build the Aparok Sync Node.
     ```
     make deps
     make build
     ```
-4.  If there are no errors, the Any-Sync Node will be built and can be found in the `/bin` directory.
+4.  If there are no errors, the Aparok Sync Node will be built and can be found in the `/bin` directory.
 
 ## Running
-Any-Sync Node requires a configuration. You can generate configuration files for your nodes with [`aparok-sync-network`](https://github.com/altercpre/aparok-sync-tools) tool.
+Aparok Sync Node requires a configuration. You can generate configuration files for your nodes with [`aparok-sync-network`](https://github.com/altercpre/aparok-sync-tools) tool.
 
-The following options are available for running the Any-Sync Node:
+The following options are available for running the Aparok Sync Node:
 
  - `-c` — path to config file (default `etc/aparok-sync-node.yml`). 
  - `-v` — current version.
@@ -31,7 +31,7 @@ nodes share an archive bucket — see the operator guide:
 [docs/resharding-operations.md](docs/resharding-operations.md)
 (design: [docs/resharding-plan.md](docs/resharding-plan.md)).
 
-## Graph example of using Any-Sync Nodes group
+## Graph example of using Aparok Sync Nodes group
 
 ```mermaid
 graph LR
